@@ -1,5 +1,7 @@
 #!/bin/sh
 
+git config --global --add safe.directory /github/workspace
+
 if [ "$INPUT_DEBUG_MODE" = true ]; then
   echo '---------------------------'
   printenv
